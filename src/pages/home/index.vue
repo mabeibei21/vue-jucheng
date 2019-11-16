@@ -23,7 +23,7 @@
 <!-- <bei-scroll ref="scroll"> -->
     <div class="section">
       <div class="bs">
-        <!--轮播图-->
+        <!---轮播图-->
         <div class="lunbo">
           <img src="img/slun.jpg" />
         </div>

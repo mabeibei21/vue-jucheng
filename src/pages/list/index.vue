@@ -14,7 +14,7 @@
                     <i class="iconfont">&#xe50c;</i>
                 </div>
             </div>
-            <!-- 列表 -->
+            <!---列表 -->
         <section>
         <div class="box">
             <router-link tag="div" :to="{name:'detail',params:{id:item.schedular_id}}" class="zhao" v-for="(item,index) in list" :key="index">

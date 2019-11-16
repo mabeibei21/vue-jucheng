@@ -67,7 +67,7 @@ export default {
   activated() {
     let { id } = this.$route.params;
     this.id = id;
-    // let id1=sessionStorage.getItem("id")||this.id
+    /// let id1=sessionStorage.getItem("id")||this.id
     this.handleListData(this.id);
   },
   methods: {

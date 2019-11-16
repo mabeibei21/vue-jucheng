@@ -10,7 +10,7 @@
             <div class="hot_city_name" v-for="(item,index) in hotList" :key="index">{{item.name}}</div>
           </div>
         </div>
-        <!--城市列表-->
+        <!---城市列表-->
         <div class="city_list" ref="city_list">
           <div class="city_list_item" v-for="item in SortList" :key="item.id">
             <div class="city_title_letter">{{item.id}}</div>

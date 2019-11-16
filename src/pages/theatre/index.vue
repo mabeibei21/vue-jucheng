@@ -35,6 +35,9 @@
     </div>
 </template>
 <script>
+
+// 注释
+
 import {theatreApi} from "@api/shouye";
 export default {
     name:"Theatre",

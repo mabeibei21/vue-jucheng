@@ -52,7 +52,7 @@ export default {
 <style>
     .sec {
             height: 100%;
-            /* padding: .417rem 0 .367rem; */
+            /* padding: .417rem 0 .-367rem; */
             overflow: auto;
         }
 
