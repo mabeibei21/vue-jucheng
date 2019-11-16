@@ -1,34 +1,50 @@
-import Vue from "vue"
-import VueRouter from "vue-router"
-import gatherCard from "./Card/gatherCard"
-import myCard from "./Card/myCard"
-import inVip from './Card/inVip'
-import cardDetail from "./Card/cardDetail"
-import performance from "./Show/performance"
-import movieDetail from "./Show/movieDetail"
+import Vue from "vue";
+import VueRouter from "vue-router";
+import home from "./home";
+import theatre from "./theatre";
+import ticket from "./ticket";
+import mine from "./mine";
+import search from "./search";
+import city from "./city";
+import list from "./list";
+import vip from "./vip";
+import detail from "./detail";
 Vue.use(VueRouter);
 
 const router = new VueRouter({
     mode: "hash",
     routes: [{
-            path: '/',
-            redirect: '/gatherCard'
+            path: "/",
+            redirect: "/home"
         }, {
-            path: '/login',
+            path: "/login",
             name: "login",
             meta: {
-                flag: true,
+                flag: false,
+                requiredAuth: false
             },
-            component: _ => import("@pages/login"),
+            component: _ => import("@pages/login")
+        }, 
+        {
+            path: "/vvv",
+            name: "vvv",
+            meta: {
+                flag: false,
+                requiredAuth: false
+            },
+            component: _ => import("@pages/vvv")
+        }, 
+    home,
+    theatre,
+    ticket,
+    mine,
+    search,
+    city,
+    list,
+    vip,
+    detail
 
-        },
-        gatherCard,
-        myCard,
-        cardDetail,
-        inVip,
-        performance,
-        movieDetail
-    ]
+]
 })
 
 router.beforeEach((to, from, next) => {
@@ -37,7 +53,7 @@ router.beforeEach((to, from, next) => {
             next();
         } else {
             next({
-                name: 'login',
+                name: "login",
                 params: {
                     to: to.path
                 }
@@ -47,5 +63,4 @@ router.beforeEach((to, from, next) => {
         next();
     }
 })
-
 export default router;

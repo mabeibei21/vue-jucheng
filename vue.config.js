@@ -1,17 +1,12 @@
+//设置配置(此文件)
 const path = require("path");
 
 module.exports = {
     devServer: {
+        //相关配置
         proxy: {
-            "/api": {
-                target: "http://39.97.33.178",
-                changeOrigin: true
-            },
-            "/Card": {
-                target: "https://api.juooo.com",
-                changeOrigin: true
-            },
-            "/vip": {
+            //设置代理
+            "/home": {
                 target: "https://api.juooo.com",
                 changeOrigin: true
             },
@@ -19,19 +14,30 @@ module.exports = {
                 target: "https://api.juooo.com",
                 changeOrigin: true
             },
-            "/card": {
+            "/city": {
                 target: "https://api.juooo.com",
+                changeOrigin: true
+            },
+            "/Show": {
+                target: "https://api.juooo.com",
+                changeOrigin: true
+            },
+            "/Search": {
+                target: "https://m.juooo.com",
                 changeOrigin: true
             },
             "/Schedule": {
                 target: "https://api.juooo.com",
                 changeOrigin: true
-            }
-        }
+            },
+            //https://api.juooo.com/Show/Search/getShowList?keywords=ete&venue_id=&page=1&sort_type=1&version=6.0.8&referer=2
+        },
     },
+    //https://api.juooo.com/Schedule/Schedule/getScheduleInfo?schedular_id=103192&version=6.0.8&referer=2
     configureWebpack: {
         resolve: {
             alias: {
+                //别名
                 "@": path.join(__dirname, "./src"),
                 "@api": path.join(__dirname, "./src/api"),
                 "@assets": path.join(__dirname, "./src/assets"),

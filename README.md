@@ -1,15 +1,19 @@
-# juooo
+# jucheng
 
-## 技术栈
-    - axios
-    - vuex
-    - vue-router
-    - js组件封装
-    - UI组件封装
-    - better-scroll
-    - vue-touch
-    - vue-lazyload
-    - vant
+## Project setup
+```
+yarn install
+```
 
-## 环境的创建
-> vue cli@3
+### Compiles and hot-reloads for development
+```
+yarn serve
+```
+
+### Compiles and minifies for production
+```
+yarn build
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
