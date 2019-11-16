@@ -30,6 +30,7 @@
   </div>
 </template>
 <script>
+// 注释
 import { detailApi } from "@api/shouye";
 export default {
   name: "Ticket",

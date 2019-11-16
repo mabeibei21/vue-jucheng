@@ -1,4 +1,5 @@
 <template>
+<!-- 注释 -->
   <div class="page">
     <header>
       <div class="setup">

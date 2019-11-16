@@ -4,6 +4,8 @@
     </div>
 </template>
 <script>
+
+// 注释
 export default {
     name:"vip"
 }
